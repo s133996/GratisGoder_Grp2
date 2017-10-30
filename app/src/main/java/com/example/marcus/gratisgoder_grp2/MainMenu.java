@@ -21,13 +21,14 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener{
         goToAdd.setOnClickListener(this);
         goToFreeStuff.setOnClickListener(this);
 
+    }
         public void onClick(View view){
         switch(view.getId()) {
             case R.id.goToAddStuff:
                 System.err.println("not yet implemented");
                 break;
             case R.id.goToFreeStuff:
-                Intent toolbarIntent = new Intent(this, toolbar.class);
+                Intent toolbarIntent = new Intent(this, ToolbarActivity.class);
                 startActivity(toolbarIntent);
                 break;
             default:
@@ -35,4 +36,4 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener{
         }
     }
     }
-}
+
