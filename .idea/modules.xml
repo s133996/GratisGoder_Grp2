@@ -4,8 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GratisGoder.iml" filepath="$PROJECT_DIR$/GratisGoder.iml" />
       <module fileurl="file://$PROJECT_DIR$/GratisGoder_Grp2.iml" filepath="$PROJECT_DIR$/GratisGoder_Grp2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/GratisGoder_Grp2.iml" filepath="$PROJECT_DIR$/GratisGoder_Grp2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/GratisGoder_Grp2.iml" filepath="$PROJECT_DIR$/GratisGoder_Grp2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
