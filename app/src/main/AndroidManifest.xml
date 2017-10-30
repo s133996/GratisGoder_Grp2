@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SearchResult_akt" />
-        <activity android:name=".Categories"></activity>
+        <activity android:name=".Categories" />
+        <activity android:name=".ToolbarActivity"></activity>
     </application>
 
 </manifest>
