@@ -59,6 +59,7 @@ public class Categories extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
@@ -70,6 +71,7 @@ public class Categories extends Fragment {
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
+
         if (mListener != null) {
             mListener.onFragmentInteraction(uri);
         }
