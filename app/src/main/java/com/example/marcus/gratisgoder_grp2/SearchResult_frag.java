@@ -1,32 +1,79 @@
 package com.example.marcus.gratisgoder_grp2;
 
 
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-public class SearchResult_akt extends AppCompatActivity {
+
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link SearchResult_frag#newInstance} factory method to
+ * create an instance of this fragment.
+ */
+public class SearchResult_frag extends Fragment {
+    // TODO: Rename parameter arguments, choose names that match
+    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
+
+    // TODO: Rename and change types of parameters
+    private String mParam1;
+    private String mParam2;
+
+    private ScrollView infoScroll, descriptionScroll;
+    private TextView info , description;
 
 
-    TextView info , description;
-    ScrollView infoScroll , descriptionScroll;
+    public SearchResult_frag() {
+        // Required empty public constructor
+    }
+
+    /**
+     * Use this factory method to create a new instance of
+     * this fragment using the provided parameters.
+     *
+     * @param param1 Parameter 1.
+     * @param param2 Parameter 2.
+     * @return A new instance of fragment SearchResult_frag.
+     */
+    // TODO: Rename and change types and number of parameters
+    public static SearchResult_frag newInstance(String param1, String param2) {
+        SearchResult_frag fragment = new SearchResult_frag();
+        Bundle args = new Bundle();
+        args.putString(ARG_PARAM1, param1);
+        args.putString(ARG_PARAM2, param2);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_search_result_akt);
-        setTitle("Sommerferie på Naturcenter Amager Strand");
-        ActionBar aBar = getSupportActionBar();
-        aBar.setDisplayHomeAsUpEnabled(true);
-        aBar.setDisplayShowHomeEnabled(true);
-        infoScroll = (ScrollView) findViewById(R.id.info_scroll);
-        descriptionScroll = (ScrollView) findViewById(R.id.description_scroll);
-        info = new TextView(this);
-        description = new TextView(this);
+        if (getArguments() != null) {
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
+        }
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View root = inflater.inflate(R.layout.fragment_search_result_frag , container , false);
+
+        infoScroll = (ScrollView) root.findViewById(R.id.info_scroll);
+        descriptionScroll = (ScrollView) root.findViewById(R.id.description_scroll);
+        info = new TextView(getActivity());
+        description = new TextView(getActivity());
+        //Placeholder text
         String infoStr = "Landsdel\n Storkøbenhavn\n" +
-                         "Kategori\n Oplevelses center\n" +
-                         "Addresse\n Øresundsstien 7\n" +
+                "Kategori\n Oplevelses center\n" +
+                "Addresse\n Øresundsstien 7\n" +
                 "2300 København S\n" +
                 "Telefon: 29282117\n" +
                 "Hjemmeside\n www.naturcenteramagerstrand.dk\n" +
@@ -55,6 +102,7 @@ public class SearchResult_akt extends AppCompatActivity {
         descriptionScroll.removeAllViews();
         infoScroll.addView(info);
         descriptionScroll.addView(description);
-
+        return root;
     }
+
 }
