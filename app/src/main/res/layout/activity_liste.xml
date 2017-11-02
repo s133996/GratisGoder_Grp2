@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marcus.gratisgoder_grp2.Liste">
+
+    <TextView
+        android:id="@+id/beskrivelse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/kort"
+        android:layout_toRightOf="@+id/kort"
+        android:text="Beskrivelse"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintTop_toBottomOf="@+id/overskrift"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/overskrift"
+        android:layout_marginLeft="22dp" />
+
+    <TextView
+        android:id="@+id/overskrift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Overskrift"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/kort"
+        android:layout_marginStart="45dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/kort"
+        android:layout_marginLeft="45dp" />
+
+    <ImageView
+        android:id="@+id/kort"
+        android:layout_width="105dp"
+        android:layout_height="89dp"
+        app:srcCompat="@drawable/danmarkskort"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

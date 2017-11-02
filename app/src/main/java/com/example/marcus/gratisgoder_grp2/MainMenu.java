@@ -17,9 +17,11 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener{
 
         Button goToFreeStuff = (Button) findViewById(R.id.goToFreeStuff);
         Button goToAdd = (Button) findViewById(R.id.goToAddStuff);
+        Button goToList = (Button) findViewById(R.id.goToList);
 
         goToAdd.setOnClickListener(this);
         goToFreeStuff.setOnClickListener(this);
+        goToList.setOnClickListener(this);
 
     }
         public void onClick(View view){
@@ -30,6 +32,10 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener{
             case R.id.goToFreeStuff:
                 Intent toolbarIntent = new Intent(this, ToolbarActivity.class);
                 startActivity(toolbarIntent);
+                break;
+            case R.id.goToList:
+                Intent liste = new Intent(this, Liste.class);
+                startActivity(liste);
                 break;
             default:
                 System.err.println("onClick method undefined");
