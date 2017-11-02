@@ -8,7 +8,7 @@
     <!-- TODO: Update blank fragment layout -->
 
     <CheckBox
-        android:id="@+id/7"
+        android:id="@+id/c7"
         android:layout_width="282dp"
         android:layout_height="34dp"
         android:layout_marginLeft="51dp"
@@ -20,7 +20,7 @@
         tools:layout_constraintTop_creator="1" />
 
     <CheckBox
-        android:id="@+id/8"
+        android:id="@+id/c8"
         android:layout_width="282dp"
         android:layout_height="34dp"
         android:layout_marginLeft="51dp"
@@ -32,7 +32,7 @@
         tools:layout_constraintTop_creator="1" />
 
     <CheckBox
-        android:id="@+id/9"
+        android:id="@+id/c9"
         android:layout_width="282dp"
         android:layout_height="34dp"
         android:layout_marginLeft="51dp"
@@ -44,7 +44,7 @@
         tools:layout_constraintTop_creator="1" />
 
     <CheckBox
-        android:id="@+id/4"
+        android:id="@+id/c4"
         android:layout_width="282dp"
         android:layout_height="34dp"
         android:layout_marginLeft="51dp"
@@ -56,7 +56,7 @@
         tools:layout_constraintTop_creator="1" />
 
     <CheckBox
-        android:id="@+id/5"
+        android:id="@+id/c5"
         android:layout_width="282dp"
         android:layout_height="34dp"
         android:layout_marginLeft="51dp"
@@ -68,7 +68,7 @@
         tools:layout_constraintTop_creator="1" />
 
     <CheckBox
-        android:id="@+id/6"
+        android:id="@+id/c6"
         android:layout_width="282dp"
         android:layout_height="34dp"
         android:layout_marginLeft="51dp"
@@ -80,7 +80,7 @@
         tools:layout_constraintTop_creator="1" />
 
     <CheckBox
-        android:id="@+id/3"
+        android:id="@+id/c3"
         android:layout_width="282dp"
         android:layout_height="34dp"
         android:layout_marginLeft="51dp"
@@ -92,7 +92,7 @@
         tools:layout_constraintTop_creator="1" />
 
     <CheckBox
-        android:id="@+id/2"
+        android:id="@+id/c2"
         android:layout_width="282dp"
         android:layout_height="34dp"
         android:layout_marginLeft="51dp"
@@ -104,7 +104,7 @@
         tools:layout_constraintTop_creator="1" />
 
     <CheckBox
-        android:id="@+id/1"
+        android:id="@+id/c1"
         android:layout_width="282dp"
         android:layout_height="34dp"
         android:layout_marginLeft="51dp"
