@@ -8,7 +8,7 @@
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="56dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
@@ -25,7 +25,7 @@
 
     <fragment
         android:id="@+id/fragment"
-        android:name="layout.Categories"
+        android:name="com.example.marcus.gratisgoder_grp2.Categories"
         android:layout_width="372dp"
         android:layout_height="511dp"
         android:layout_marginBottom="8dp"
@@ -38,6 +38,5 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
-        app:layout_constraintVertical_bias="0.486"
-        tools:layout_editor_absoluteY="66dp" />
+        app:layout_constraintVertical_bias="0.486" />
 </android.support.constraint.ConstraintLayout>

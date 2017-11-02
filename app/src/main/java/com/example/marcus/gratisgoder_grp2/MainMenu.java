@@ -35,5 +35,5 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener{
                 System.err.println("onClick method undefined");
         }
     }
-    }
+}
 
